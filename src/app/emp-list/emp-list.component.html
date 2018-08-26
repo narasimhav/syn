@@ -1,0 +1,21 @@
+<!-- <script src="../Authentication/authentication.service.ts"></script> -->
+<div class="container">
+  <div>
+    <select [(ngModel)]="empId" (change)="emp(empId)">
+      <option *ngFor="let item of EmployeeList" [value]="item.id">{{item.startDate +"  "+item.endDate}}</option>
+    </select>
+
+    <select [(ngModel)]="usId" (change)="user(usId)">
+      <option *ngFor="let list of timetable" [value]="list.id">{{list.start_date}}</option>
+    </select>
+
+    <select [(ngModel)]="tId" (change)="teacher()">
+      <option *ngFor="let name of authenticationService.getClass" [value]="name.id">{{name.first_name}}</option>
+    </select>
+
+    <!-- <select>
+      <option *ngFor="let dem of demo" [value]="dem.id">{{dem.name}}</option>
+    </select> -->
+
+  </div>
+</div>

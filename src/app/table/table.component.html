@@ -1,0 +1,19 @@
+<table>
+  <thead>
+    <tr>
+      <th>Day</th>
+      <th>Entries</th>
+    </tr>
+  </thead>
+  <tbody *ngFor="let data of authenticationService.List">
+    <tr>
+      <td>{{data.day}}</td>
+      <td>
+        <tr>
+          <td>{{data.entries[0].batch.courseName}}</td><br>
+          <td>{{data.entries[1].batch.courseName}}</td>
+          </tr>
+      </td>
+    </tr>
+  </tbody>
+</table>
