@@ -6,14 +6,14 @@ import { FormsModule} from '@angular/forms';
 import { AppComponent } from './app.component';
 import { EmpListComponent } from './emp-list/emp-list.component';
 import { TableComponent } from './table/table.component';
-import { UsersComponent } from './users/users.component';
+// import { UsersComponent } from './users/users.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     EmpListComponent,
     TableComponent,
-    UsersComponent
+    // UsersComponent
   ],
   imports: [
     BrowserModule,
